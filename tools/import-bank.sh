@@ -53,7 +53,7 @@ SETUP:
     3. Download CSV from your bank
     4. Run ./import-bank.sh
 
-For more info: https://github.com/YOUR_USERNAME/hledger-bank-import
+For more info: https://github.com/KayleeBeyene/hledger-bank-import
 EOF
 }
 
