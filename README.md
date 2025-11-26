@@ -183,6 +183,9 @@ The script will:
 
 ## Canadian Tax Tips for YouTubers (NOT FINANCIAL ADVICE - SPEAK TO YOUR ACCOUNTANT FIRST)
 
+> **⚠️ NOT FINANCIAL ADVICE. SPEAK TO YOUR ACCOUNTANT FIRST.**
+> These are general tips only. Tax laws change, and your situation may be different. Always consult a professional.
+
 This template includes detailed tax notes in `accounting/main.journal`, but here are the highlights:
 
 ### What You Can Deduct
