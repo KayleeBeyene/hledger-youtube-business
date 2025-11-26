@@ -45,6 +45,19 @@ hledger-youtube-business/
         └── cibc.rules
 ```
 
+## ⚠️ Privacy Note
+
+If you plan to use git with your real financial data, check the `.gitignore` file first! By default, it does NOT ignore your journal files (so you can see the examples).
+
+**To keep your finances private**, edit `.gitignore` and uncomment these lines:
+```
+accounting/*.journal
+receipts/*
+taxes/*
+```
+
+This prevents your actual transactions from being uploaded if you push to GitHub.
+
 ## Quick Start (5 minutes)
 
 ### Step 1: Install hledger
