@@ -24,8 +24,7 @@
 
 2025-01-01 Opening Balance | Starting to track finances
     assets:bank:chequing       500.00 CAD
-    equity:opening
-    ; Note: My bank balance when I started tracking
+    equity:opening            -500.00 CAD
 
 ; ============================================
 ; JANUARY 2025 - SAMPLE TRANSACTIONS
@@ -34,79 +33,79 @@
 
 ; --- INCOME ---
 
+; Payment from Google for December ad revenue
 2025-01-15 YouTube AdSense | December 2024 payout
-    assets:bank:chequing       847.23 CAD
-    income:youtube:adsense
-    ; Note: Payment from Google for December ad revenue
+    assets:bank:chequing        847.23 CAD
+    income:youtube:adsense     -847.23 CAD
 
+; Sponsored video about their new product
+; Contract saved as 2025-01-20-techgadgets-contract.pdf
 2025-01-20 Brand Deal | TechGadgets Co sponsorship
-    assets:bank:chequing      1500.00 CAD
-    income:sponsorships
-    ; Note: Sponsored video about their new product
-    ; Note: Contract saved as 2025-01-20-techgadgets-contract.pdf
+    assets:bank:chequing       1500.00 CAD
+    income:sponsorships       -1500.00 CAD
 
 ; --- MONTHLY RECURRING (customize percentages) ---
 
+; $80 total × 50% business use = $40
+; Receipt saved as 2025-01-shaw-internet.pdf
 2025-01-01 Shaw Internet | Monthly internet (50% business)
-    expenses:office:utilities   40.00 CAD
-    assets:bank:chequing
-    ; Note: $80 total × 50% business use = $40
-    ; Note: Receipt saved as 2025-01-shaw-internet.pdf
+    expenses:office:utilities    40.00 CAD
+    assets:bank:chequing        -40.00 CAD
 
+; $1500 rent × 15% office space = $225
 2025-01-01 Home Office | January rent portion (15% business)
-    expenses:office:rent       225.00 CAD
-    assets:bank:chequing
-    ; Note: $1500 rent × 15% office space = $225
+    expenses:office:rent        225.00 CAD
+    assets:bank:chequing       -225.00 CAD
 
 ; --- SOFTWARE SUBSCRIPTIONS ---
 
+; Background music for videos
 2025-01-05 Epidemic Sound | Monthly music subscription
-    expenses:software:music     16.99 CAD
-    assets:bank:chequing
-    ; Note: Background music for videos
+    expenses:software:music      16.99 CAD
+    assets:bank:chequing        -16.99 CAD
 
+; Premiere Pro for video editing
 2025-01-10 Adobe Creative Cloud | Monthly subscription
-    expenses:software:editing   54.99 CAD
-    liabilities:creditcard
-    ; Note: Premiere Pro for video editing
+    expenses:software:editing    54.99 CAD
+    liabilities:creditcard      -54.99 CAD
 
+; YouTube analytics and SEO tool
 2025-01-12 TubeBuddy | Pro subscription
-    expenses:software:youtube   19.99 CAD
-    assets:bank:chequing
-    ; Note: YouTube analytics and SEO tool
+    expenses:software:youtube    19.99 CAD
+    assets:bank:chequing        -19.99 CAD
 
 ; --- EQUIPMENT PURCHASES ---
 
+; Receipt saved as 2025-01-08-amazon-rode-mic.pdf
 2025-01-08 Amazon | Rode microphone for better audio
-    expenses:equipment:audio   149.99 CAD
-    assets:bank:chequing
-    ; Note: Receipt saved as 2025-01-08-amazon-rode-mic.pdf
+    expenses:equipment:audio    149.99 CAD
+    assets:bank:chequing       -149.99 CAD
 
+; Receipt saved as 2025-01-15-bestbuy-ringlight.pdf
 2025-01-15 Best Buy | Ring light for face cam
     expenses:equipment:lighting  79.99 CAD
-    liabilities:creditcard
-    ; Note: Receipt saved as 2025-01-15-bestbuy-ringlight.pdf
+    liabilities:creditcard      -79.99 CAD
 
 ; --- BUSINESS MEALS (Remember: only 50% deductible!) ---
 
+; Met with @TechReviewer to discuss collab
+; Only 50% of this is tax-deductible!
 2025-01-22 Starbucks | Coffee meeting with fellow YouTuber
-    expenses:meals:business     12.50 CAD
-    assets:bank:chequing
-    ; Note: Met with @TechReviewer to discuss collab
-    ; Note: Only 50% of this is tax-deductible!
+    expenses:meals:business      12.50 CAD
+    assets:bank:chequing        -12.50 CAD
 
 ; --- EDUCATION ---
 
+; Video editing and business courses
 2025-01-25 Skillshare | Annual subscription
-    expenses:education:courses 119.88 CAD
-    assets:bank:chequing
-    ; Note: Video editing and business courses
+    expenses:education:courses  119.88 CAD
+    assets:bank:chequing       -119.88 CAD
 
 ; --- BANK FEES ---
 
 2025-01-31 TD Bank | Monthly account fee
-    expenses:fees:bank          16.95 CAD
-    assets:bank:chequing
+    expenses:fees:bank           16.95 CAD
+    assets:bank:chequing        -16.95 CAD
 
 ; ============================================
 ; HOW TO ADD YOUR OWN TRANSACTIONS
@@ -116,7 +115,7 @@
 ; 2. Change the date (YYYY-MM-DD format)
 ; 3. Change the description
 ; 4. Update the account and amount
-; 5. Add notes referencing your receipt file
+; 5. Add notes BEFORE the transaction (not inside it)
 ;
 ; FINDING THE RIGHT ACCOUNT:
 ; - Look in accounts.journal for the full list
