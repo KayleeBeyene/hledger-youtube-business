@@ -1,0 +1,30 @@
+# User config (contains personal paths)
+tools/config
+
+# macOS
+.DS_Store
+._*
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Note: We DO track the sample journal files
+# Users should replace the sample data with their own
+
+# If you want to keep your actual financial data private,
+# you might want to:
+# 1. Fork this repo privately
+# 2. Or add these lines:
+# accounting/*.journal
+# receipts/*
+# taxes/*

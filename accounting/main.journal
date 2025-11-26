@@ -1,0 +1,74 @@
+; ============================================
+; HLEDGER STARTER TEMPLATE FOR YOUTUBE CREATORS
+; Canadian Content Creator / Sole Proprietor
+; ============================================
+
+; This is your main journal file - the "hub" that includes everything else.
+; You should rarely edit this file directly. Instead, add transactions
+; to your yearly journal files (2025.journal, 2026.journal, etc.)
+
+; Include chart of accounts (all your account names)
+include accounts.journal
+
+; Include yearly journals (your actual transactions)
+include 2025.journal
+
+; Add future years as needed:
+; include 2026.journal
+; include 2027.journal
+
+; ============================================
+; CANADIAN TAX NOTES FOR YOUTUBERS
+; ============================================
+
+; BUSINESS-USE PERCENTAGES (customize these)
+; -----------------------------------------
+; - Internet: 50% (if you use it half for business)
+; - Home office (rent): 15% (based on square footage)
+; - Home office (utilities): 15% (same percentage as rent)
+; - Phone: 30% (estimate based on business use)
+
+; HOME OFFICE DEDUCTION
+; ---------------------
+; 1. Measure your office space (square feet)
+; 2. Divide by total home space
+; 3. Claim that % of rent, utilities, insurance, property tax
+; Example: 120 sq ft office / 800 sq ft apartment = 15%
+
+; VEHICLE / MILEAGE
+; -----------------
+; - Track EVERY business trip (date, destination, km, purpose)
+; - CRA mileage rate 2024: $0.70/km (first 5000 km), $0.64/km after
+; - Rate changes yearly - check CRA website
+; - Keep a logbook (can be plain text or spreadsheet)
+; - Example trips: driving to shoot locations, picking up equipment
+
+; MEALS & ENTERTAINMENT
+; ---------------------
+; - Only 50% deductible in Canada
+; - Must be business-related (meeting with collaborator, etc.)
+; - Keep receipt AND note who you met with and why
+; - Coffee with another YouTuber to discuss collab = deductible
+; - Lunch alone while editing = NOT deductible
+
+; EQUIPMENT OVER $500
+; -------------------
+; - Must depreciate over time (CCA - Capital Cost Allowance)
+; - Can't expense fully in year of purchase
+; - Your accountant will calculate at tax time
+; - Under $500? Expense it fully in the year you bought it
+
+; GST/HST REGISTRATION
+; --------------------
+; - NOT required until $30,000 revenue in 12 months
+; - Once registered, charge 5% GST (or 13-15% HST) on Canadian services
+; - YouTube AdSense is zero-rated (Google handles international tax)
+; - Sponsorships from Canadian companies: charge GST/HST
+; - Sponsorships from US companies: zero-rated export
+
+; WHEN TO GET AN ACCOUNTANT
+; -------------------------
+; - When you hit $30K revenue (GST registration decision)
+; - When you're unsure about a deduction
+; - At tax time if you're not confident
+; - Cost: $200-500/year for a simple sole proprietor return

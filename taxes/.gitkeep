@@ -1,0 +1,12 @@
+# This folder is for tax-related documents
+#
+# Suggested contents:
+#   - T2125 (Statement of Business Activities) copies
+#   - Annual income summaries
+#   - GST/HST returns (if registered)
+#   - CRA correspondence
+#   - Tax preparer documents
+#
+# At year end, you can generate reports:
+#   hledger -f accounting/main.journal incomestatement -p 2025 > taxes/2025-income-statement.txt
+#   hledger -f accounting/main.journal balance expenses -p 2025 > taxes/2025-expenses.txt

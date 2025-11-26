@@ -1,0 +1,131 @@
+; ============================================
+; 2025 TRANSACTIONS
+; ============================================
+;
+; This is where you record your daily transactions.
+; Each year gets its own file to keep things organized.
+;
+; TRANSACTION FORMAT:
+;   DATE DESCRIPTION
+;       account:name    AMOUNT
+;       account:name    AMOUNT (or leave blank to auto-balance)
+;
+; TIPS:
+; - Indent account lines with 4 spaces (or a tab)
+; - One account must balance the other (money comes from somewhere!)
+; - Add notes with ; after a transaction or on its own line
+; - Reference receipt filenames so you can find them later
+
+; ============================================
+; OPENING BALANCE
+; ============================================
+; When you start tracking, record your current balances.
+; This is a one-time entry.
+
+2025-01-01 Opening Balance | Starting to track finances
+    assets:bank:chequing       500.00 CAD
+    equity:opening
+    ; Note: My bank balance when I started tracking
+
+; ============================================
+; JANUARY 2025 - SAMPLE TRANSACTIONS
+; ============================================
+; Delete these examples and add your own!
+
+; --- INCOME ---
+
+2025-01-15 YouTube AdSense | December 2024 payout
+    assets:bank:chequing       847.23 CAD
+    income:youtube:adsense
+    ; Note: Payment from Google for December ad revenue
+
+2025-01-20 Brand Deal | TechGadgets Co sponsorship
+    assets:bank:chequing      1500.00 CAD
+    income:sponsorships
+    ; Note: Sponsored video about their new product
+    ; Note: Contract saved as 2025-01-20-techgadgets-contract.pdf
+
+; --- MONTHLY RECURRING (customize percentages) ---
+
+2025-01-01 Shaw Internet | Monthly internet (50% business)
+    expenses:office:utilities   40.00 CAD
+    assets:bank:chequing
+    ; Note: $80 total × 50% business use = $40
+    ; Note: Receipt saved as 2025-01-shaw-internet.pdf
+
+2025-01-01 Home Office | January rent portion (15% business)
+    expenses:office:rent       225.00 CAD
+    assets:bank:chequing
+    ; Note: $1500 rent × 15% office space = $225
+
+; --- SOFTWARE SUBSCRIPTIONS ---
+
+2025-01-05 Epidemic Sound | Monthly music subscription
+    expenses:software:music     16.99 CAD
+    assets:bank:chequing
+    ; Note: Background music for videos
+
+2025-01-10 Adobe Creative Cloud | Monthly subscription
+    expenses:software:editing   54.99 CAD
+    liabilities:creditcard
+    ; Note: Premiere Pro for video editing
+
+2025-01-12 TubeBuddy | Pro subscription
+    expenses:software:youtube   19.99 CAD
+    assets:bank:chequing
+    ; Note: YouTube analytics and SEO tool
+
+; --- EQUIPMENT PURCHASES ---
+
+2025-01-08 Amazon | Rode microphone for better audio
+    expenses:equipment:audio   149.99 CAD
+    assets:bank:chequing
+    ; Note: Receipt saved as 2025-01-08-amazon-rode-mic.pdf
+
+2025-01-15 Best Buy | Ring light for face cam
+    expenses:equipment:lighting  79.99 CAD
+    liabilities:creditcard
+    ; Note: Receipt saved as 2025-01-15-bestbuy-ringlight.pdf
+
+; --- BUSINESS MEALS (Remember: only 50% deductible!) ---
+
+2025-01-22 Starbucks | Coffee meeting with fellow YouTuber
+    expenses:meals:business     12.50 CAD
+    assets:bank:chequing
+    ; Note: Met with @TechReviewer to discuss collab
+    ; Note: Only 50% of this is tax-deductible!
+
+; --- EDUCATION ---
+
+2025-01-25 Skillshare | Annual subscription
+    expenses:education:courses 119.88 CAD
+    assets:bank:chequing
+    ; Note: Video editing and business courses
+
+; --- BANK FEES ---
+
+2025-01-31 TD Bank | Monthly account fee
+    expenses:fees:bank          16.95 CAD
+    assets:bank:chequing
+
+; ============================================
+; HOW TO ADD YOUR OWN TRANSACTIONS
+; ============================================
+;
+; 1. Copy a similar transaction above
+; 2. Change the date (YYYY-MM-DD format)
+; 3. Change the description
+; 4. Update the account and amount
+; 5. Add notes referencing your receipt file
+;
+; FINDING THE RIGHT ACCOUNT:
+; - Look in accounts.journal for the full list
+; - Use Tab completion in most editors
+; - When in doubt, use expenses:other and fix later
+;
+; KEEPING RECEIPTS:
+; I recommend this naming pattern:
+;   YYYY-MM-DD-vendor-description.pdf
+;   Example: 2025-01-08-amazon-rode-mic.pdf
+;
+; Store them in the receipts/ folder, organized by year.

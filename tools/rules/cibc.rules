@@ -1,0 +1,92 @@
+# CIBC - Chequing/Savings Account
+# Export: Online Banking → View Transactions → Download → CSV
+#
+# CSV Format (with header):
+#   Transaction Date,Transaction,Withdrawal,Deposit,Balance
+#   2025-01-15,TIM HORTONS,5.50,,100.00
+
+# Skip header row
+skip 1
+
+# Column mapping
+fields date, description, amount-out, amount-in, _
+
+# Date format: YYYY-MM-DD
+date-format %Y-%m-%d
+
+# Currency
+currency $
+
+# Your account (customize this)
+account1 assets:bank:cibc:chequing
+
+# Default category for unmatched transactions
+account2 expenses:uncategorized
+
+# ============================================================================
+# AUTO-CATEGORIZATION RULES
+# Add your own patterns below
+# ============================================================================
+
+# Income
+if E-TRANSFER.*FROM
+  account2 income:transfers
+
+if INTERAC.*FROM
+  account2 income:transfers
+
+if PAYROLL
+  account2 income:salary
+
+if DIRECT DEPOSIT
+  account2 income:salary
+
+# Transfers
+if E-TRANSFER.*TO
+  account2 expenses:transfers
+
+if INTERAC.*TO
+  account2 expenses:transfers
+
+# Food & Dining
+if TIM HORTONS
+  account2 expenses:food:coffee
+
+if STARBUCKS
+  account2 expenses:food:coffee
+
+if MCDONALD
+  account2 expenses:food:dining
+
+if SKIPTHEDISHES
+  account2 expenses:food:delivery
+
+if UBER EATS
+  account2 expenses:food:delivery
+
+# Shopping
+if AMAZON
+  account2 expenses:shopping:amazon
+
+if WALMART
+  account2 expenses:shopping:groceries
+
+if COSTCO
+  account2 expenses:shopping:groceries
+
+# Transportation
+if ESSO
+  account2 expenses:auto:gas
+
+if PETRO
+  account2 expenses:auto:gas
+
+if SHELL
+  account2 expenses:auto:gas
+
+# Fees
+if MONTHLY FEE
+  account2 expenses:bank:fees
+
+if SERVICE CHARGE
+  account2 expenses:bank:fees

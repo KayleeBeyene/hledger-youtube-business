@@ -1,0 +1,12 @@
+# This folder is for storing your receipt PDFs
+#
+# Recommended naming convention:
+#   YYYY-MM-DD-vendor-description.pdf
+#
+# Examples:
+#   2025-01-15-amazon-rode-mic.pdf
+#   2025-02-01-epidemic-sound.pdf
+#   2025-03-10-bestbuy-ring-light.pdf
+#
+# Reference receipts in your transactions:
+#   ; Receipt: 2025-01-15-amazon-rode-mic.pdf

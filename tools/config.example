@@ -1,0 +1,56 @@
+# hledger Bank Import Configuration
+# Copy this file to 'config' and customize for your setup
+#
+# cp config.example config
+
+# ============================================================================
+# REQUIRED SETTINGS
+# ============================================================================
+
+# Where your bank downloads CSV files (usually ~/Downloads)
+DOWNLOADS_DIR="~/Downloads"
+
+# Path to your hledger journal file
+# This should point to accounting/main.journal in your cloned repo
+LEDGER_FILE="~/hledger-youtube-business/accounting/main.journal"
+
+# ============================================================================
+# CSV FILE PATTERNS
+# ============================================================================
+
+# Space-separated patterns to search for in DOWNLOADS_DIR
+# The most recently modified matching file will be imported
+#
+# Common Canadian bank export filenames:
+#   TD:         accountactivity.csv
+#   RBC:        *.csv (generic)
+#   Scotiabank: export*.csv
+#   BMO:        Statement*.csv
+#   CIBC:       cibc*.csv
+#
+CSV_PATTERNS="accountactivity.csv export*.csv Statement*.csv cibc*.csv"
+
+# ============================================================================
+# BANK MAPPINGS
+# ============================================================================
+
+# Map CSV filename patterns to rules files
+# Format: pattern:rulefile (without .rules extension)
+# One mapping per line, use newlines
+#
+# Example: if your TD CSV contains "accountactivity" in the name,
+# it will use rules/td.rules
+#
+BANK_MAPPINGS="accountactivity:td
+export:scotiabank
+Statement:bmo
+cibc:cibc
+rbc:rbc"
+
+# ============================================================================
+# OPTIONAL SETTINGS
+# ============================================================================
+
+# Archive directory - CSVs are moved here after successful import
+# Comment out to disable archiving
+# ARCHIVE_DIR="~/finance/imports"

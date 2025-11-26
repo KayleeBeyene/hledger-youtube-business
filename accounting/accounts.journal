@@ -1,0 +1,141 @@
+; ============================================
+; CHART OF ACCOUNTS - YOUTUBE CREATOR (CANADA)
+; ============================================
+;
+; This file defines all your account names.
+; Think of it as your "categories" for organizing money.
+;
+; HOW TO READ THIS:
+; - "assets" = money you HAVE
+; - "liabilities" = money you OWE
+; - "income" = money coming IN
+; - "expenses" = money going OUT
+; - "equity" = your ownership/investment in the business
+;
+; The colons create sub-categories:
+;   expenses:food:coffee means Expenses → Food → Coffee
+
+; ============================================
+; ASSETS - Money You Have
+; ============================================
+
+account assets:bank:chequing             ; Your main bank account
+account assets:bank:savings              ; Savings account
+account assets:bank:business             ; Separate business account (recommended)
+account assets:cash                      ; Physical cash on hand
+account assets:receivable                ; Money owed TO you (unpaid invoices)
+account assets:paypal                    ; PayPal balance
+account assets:adsense                   ; AdSense balance (before payout)
+
+; ============================================
+; LIABILITIES - Money You Owe
+; ============================================
+
+account liabilities:creditcard           ; Credit card balance
+account liabilities:creditcard:business  ; Business credit card (if you have one)
+account liabilities:tax:income           ; Tax money you're setting aside
+account liabilities:tax:gst              ; GST/HST collected (once registered)
+account liabilities:payable              ; Bills you haven't paid yet
+
+; ============================================
+; EQUITY - Your Investment
+; ============================================
+
+account equity:opening                   ; Starting balances when you begin tracking
+account equity:owner:investment          ; Money you put INTO the business
+account equity:owner:draw                ; Money you take OUT (paying yourself)
+
+; ============================================
+; INCOME - Money Coming In
+; ============================================
+
+; YouTube Revenue
+account income:youtube:adsense           ; YouTube AdSense revenue
+account income:youtube:memberships       ; Channel memberships
+account income:youtube:superchat         ; Super Chats and Super Thanks
+account income:youtube:premium           ; YouTube Premium revenue share
+
+; Other Creator Income
+account income:sponsorships              ; Brand deals and sponsorships
+account income:affiliate                 ; Amazon Associates, other affiliate links
+account income:products:digital          ; Courses, templates, presets
+account income:products:physical         ; Merch, physical products
+account income:services                  ; Consulting, coaching, freelance
+account income:tips                      ; Ko-fi, Buy Me a Coffee, etc.
+account income:other                     ; Miscellaneous income
+
+; Day Job (if you have one)
+account income:employment                ; Your regular job income (for tracking)
+
+; ============================================
+; EXPENSES - Money Going Out
+; ============================================
+
+; --- EQUIPMENT (Capital expenses - may need to depreciate if >$500) ---
+account expenses:equipment:camera        ; Cameras, lenses, gimbals
+account expenses:equipment:audio         ; Mics, audio interfaces, headphones
+account expenses:equipment:lighting      ; Lights, reflectors, diffusers
+account expenses:equipment:computer      ; Laptop, desktop, monitors
+account expenses:equipment:video         ; Tripods, teleprompters, green screens
+account expenses:equipment:other         ; Cables, memory cards, bags
+
+; --- SOFTWARE & SUBSCRIPTIONS ---
+account expenses:software:editing        ; DaVinci Resolve, Premiere, Final Cut
+account expenses:software:music          ; Epidemic Sound, Artlist, Musicbed
+account expenses:software:graphics       ; Canva, Photoshop, Figma
+account expenses:software:productivity   ; Notion, Obsidian, Todoist
+account expenses:software:hosting        ; Website hosting, domains
+account expenses:software:youtube        ; TubeBuddy, VidIQ, thumbnail tools
+account expenses:software:ai             ; ChatGPT, Claude, AI tools
+account expenses:software:other          ; Other subscriptions
+
+; --- CONTENT PRODUCTION ---
+account expenses:production:props        ; Props and materials for videos
+account expenses:production:locations    ; Location fees, permits, studio rental
+account expenses:production:talent       ; Paying guests or collaborators
+account expenses:production:stock        ; Stock footage, photos, music
+
+; --- HOME OFFICE ---
+account expenses:office:rent             ; Business portion of rent/mortgage
+account expenses:office:utilities        ; Business portion of power, heat, internet
+account expenses:office:supplies         ; Desk supplies, paper, pens
+account expenses:office:furniture        ; Desk, chair, shelving
+
+; --- MARKETING & GROWTH ---
+account expenses:marketing:ads           ; YouTube ads, social media ads
+account expenses:marketing:tools         ; Analytics tools, schedulers
+account expenses:marketing:branding      ; Logo, thumbnails, channel art
+account expenses:marketing:pr            ; PR services, press kits
+
+; --- PROFESSIONAL SERVICES ---
+account expenses:professional:accounting ; Accountant, bookkeeper
+account expenses:professional:legal      ; Lawyer, contract review
+account expenses:professional:insurance  ; Business liability insurance
+
+; --- EDUCATION ---
+account expenses:education:courses       ; Online courses, skillshare, etc.
+account expenses:education:books         ; Books, ebooks, audiobooks
+account expenses:education:conferences   ; VidCon, Creator Summit, etc.
+account expenses:education:coaching      ; YouTube coaches, mentors
+
+; --- TRANSPORTATION ---
+account expenses:auto:mileage            ; Business mileage (track per km)
+account expenses:auto:gas                ; Gas for business trips
+account expenses:auto:parking            ; Parking fees
+account expenses:auto:transit            ; Public transit for business
+
+; --- MEALS (50% deductible in Canada) ---
+account expenses:meals:business          ; Meals with collaborators, sponsors
+
+; --- BANK & TRANSACTION FEES ---
+account expenses:fees:bank               ; Monthly bank fees
+account expenses:fees:transaction        ; Transaction fees, currency conversion
+account expenses:fees:paypal             ; PayPal fees
+account expenses:fees:stripe             ; Stripe fees (if selling products)
+
+; --- TAXES ---
+account expenses:tax:income              ; Income tax payments
+account expenses:tax:gst                 ; GST/HST payments
+
+; --- MISCELLANEOUS ---
+account expenses:other                   ; Anything that doesn't fit elsewhere
