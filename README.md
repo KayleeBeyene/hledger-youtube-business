@@ -47,16 +47,22 @@ hledger-youtube-business/
 
 ## ⚠️ Privacy Note
 
-If you plan to use git with your real financial data, check the `.gitignore` file first! By default, it does NOT ignore your journal files (so you can see the examples).
+**You can absolutely use git for version control of your finances!** This is one of the best features of plain-text accounting. However, be careful about where you push:
 
-**To keep your finances private**, edit `.gitignore` and uncomment these lines:
+| Setup | Safe? | Notes |
+|-------|-------|-------|
+| Local git only | ✅ | Never leaves your computer |
+| Private GitHub repo | ✅ | Only you can see it |
+| Public GitHub repo | ⚠️ | Everyone can see your finances! |
+
+**If using a public repo**, edit `.gitignore` and uncomment these lines:
 ```
 accounting/*.journal
 receipts/*
 taxes/*
 ```
 
-This prevents your actual transactions from being uploaded if you push to GitHub.
+**Recommended setup:** Use git locally for version history, and back up your files to a private cloud folder (iCloud, Dropbox, etc.) instead of a public repo.
 
 ## Quick Start (5 minutes)
 
