@@ -65,7 +65,7 @@ sudo apt install hledger
 
 ```bash
 cd ~
-git clone https://github.com/YOUR_USERNAME/hledger-youtube-business.git
+git clone https://github.com/KayleeBeyene/hledger-youtube-business.git
 cd hledger-youtube-business
 ```
 
@@ -181,7 +181,7 @@ The script will:
 - Show you a preview
 - Ask for confirmation before importing
 
-## Canadian Tax Tips for YouTubers
+## Canadian Tax Tips for YouTubers (NOT FINANCIAL ADVICE - SPEAK TO YOUR ACCOUNTANT FIRST)
 
 This template includes detailed tax notes in `accounting/main.journal`, but here are the highlights:
 
