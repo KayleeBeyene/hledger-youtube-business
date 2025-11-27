@@ -1,10 +1,10 @@
 # hledger YouTube Business Template
 
-A complete, beginner-friendly starter template for Canadian YouTube creators to track their business finances using [hledger](https://hledger.org) - free, open-source, plain-text accounting.
+A complete, beginner-friendly starter template for YouTube creators to track their business finances using [hledger](https://hledger.org) - free, open-source, plain-text accounting.
 
 **Perfect for:**
 - YouTubers and content creators
-- Canadian sole proprietors
+- Sole proprietors
 - Beginners who've never done bookkeeping
 - Anyone who wants control over their financial data
 
